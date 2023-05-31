@@ -1,0 +1,31 @@
+.banner{
+    background-image: url(/banner.jpeg);
+
+}
+.bannercontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    gap: 20px;
+    padding: 100px 0px;
+}
+.bannerinput{
+  background-color: black;
+  color: white;
+  width:50rem;
+  padding: 5px;
+}
+
+@media (max-width:816px){
+   .bannerinput{
+    width: 25rem;
+   } 
+}
+@media (max-width:500px){
+    .bannerinput{
+     width: 15rem;
+    } 
+ }

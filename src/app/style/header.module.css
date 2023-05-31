@@ -1,0 +1,17 @@
+.nav{
+    background-color: #f80;
+    padding: 10px 0px;
+}
+.navlist ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 15px;
+}
+.navlist ul li:first-child{
+    background-color: red;
+}
+.navlist ul li a{
+    text-decoration: none;
+    color: white;
+}

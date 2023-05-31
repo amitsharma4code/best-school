@@ -1,6 +1,8 @@
-import './globals.css'
+import Link from 'next/link'
+import './style/globals.css'
 import { Inter } from 'next/font/google'
-
+import Header from './Component/Header'
+import Footer from './Component/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -11,7 +13,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></link>
+        <Header/>
+        {children}
+        <Footer/>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" async></script>
+        
+      </body>
     </html>
   )
 }
